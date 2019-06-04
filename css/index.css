@@ -292,13 +292,29 @@ header .logo {
 }
 @media (max-width: 500px){
     .main-content {
+      display: flex;
       width: 95%;
-      margin: 75px auto 35px auto;
+      margin: auto;
+      flex-direction: flex-start; 
+      flex-wrap: wrap;
     }
-}
+    .main-content .top-content {
+      display: flex;
+      flex-direction: column;
+      
+
+    }
+  }
 
 .main-content .bottom-content {
   display: flex;
+}
+
+@media (max-width: 500px){
+  .main-content .bottom-content{
+    display:flex; 
+    display: column;
+  }
 }
 
 .main-content .bottom-content p {
